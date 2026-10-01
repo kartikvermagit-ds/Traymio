@@ -1,0 +1,77 @@
+TRAYMIO - A LITTLE SPACE BETWEEN FOLDERS
+Version 1.0.0 | Windows desktop app
+
+QUICK START
+1. Open Traymio.exe. No installer or administrator access is needed.
+2. Drag files or folders from File Explorer into the tray. You can also use
+   + Files, + Folder, or Paste files after copying files in Explorer.
+3. Collect more items from other folders. Duplicates are skipped.
+4. Hold the green Drag all files out button and drag into your destination
+   folder or a compatible app. For a subset, select rows and drag those rows.
+5. Alternatively, click Copy all / Copy selected and press Ctrl+V in Explorer.
+
+HINDI QUICK START
+Traymio kholo > alag folders se files tray mein daalo > green button ko pakadkar
+destination folder mein drag karo. Ya Copy all dabao aur Explorer mein Ctrl+V.
+Original files apni jagah rehti hain.
+
+WHAT THE TRAY STORES
+The tray holds references to existing files/folders, not separate backups.
+Originals remain at their existing paths. Dragging out offers COPY only.
+Removing a row or clearing the tray does not delete anything from disk.
+If a source is moved, deleted, or disconnected, it becomes unavailable and
+must be re-added from its new location before you transfer it.
+
+This is a temporary, session-only tray. Closing Traymio clears the list.
+Hide keeps the app and tray running. There is no automatic startup or saved
+shelf history in this version. Each window holds up to 300 items.
+
+CONTROLS
+- Ctrl+click / Shift+click: select multiple items.
+- Ctrl+A: select all tray items.
+- Ctrl+C: copy selected file references, or all if no items are selected.
+- Ctrl+V: add files copied from File Explorer.
+- Delete / Remove: remove selected tray references only.
+- Ctrl+Z / Undo: restore the last removal or clear operation.
+- Double-click one item: show it in File Explorer; does not execute the file.
+- Right-click: copy, reveal, remove, or remove unavailable entries.
+- Keep on top: keep the tray above ordinary windows.
+- Ctrl+Alt+T: show/hide Traymio while it is running.
+- Escape / Hide: hide to the notification area.
+- Notification-area icon: double-click to reopen; right-click for Exit.
+- X / Exit: quit the app and clear this session's tray.
+
+If Ctrl+Alt+T is already used by another app or another Traymio window, a
+message appears and the notification-area icon remains available. Windows
+may place that icon under its hidden-icons arrow.
+
+COMPATIBILITY
+Designed for Windows 10/11 with the built-in .NET Framework 4.x runtime.
+No Python, browser, account, internet connection, or background service is used.
+This is a custom unsigned executable.
+
+Supports existing filesystem files and folders. Plain text, web links,
+clipboard screenshots, and virtual Outlook attachments are not supported.
+Save virtual/online content to disk before adding it. Folder drops into web
+upload fields depend on the destination app; File Explorer is the simplest
+target. The destination handles its own duplicate-name and overwrite dialogs.
+Windows may block drag/drop between normal and administrator-level apps.
+Traymio does not recursively inspect folders, copy file contents into its tray,
+move originals, or suppress destination prompts.
+
+PRIVACY AND UNINSTALL
+The app makes no network requests and does not save the tray paths to disk.
+Copy files explicitly puts file references on the Windows clipboard until it
+is replaced or cleared. Your normal Windows clipboard settings still apply.
+To uninstall, exit Traymio and delete its folder.
+
+SOURCE AND VERIFICATION
+Complete source, guides, releases, and support:
+https://github.com/kartikvermagit-ds/Traymio
+From a source checkout: .\scripts\build.ps1 -Test -Package
+Tests generate synthetic files under artifacts/. They do not change your
+clipboard or register the shortcut. See Validation.txt, when included, for coverage.
+Live cross-app dragging, clipboard paste, notification icon, shortcut conflicts,
+network paths, and mixed-DPI setups need a manual trial on the target PC.
+The README preview shows synthetic sample items with demo paths.
+Released under the MIT license included in this package.

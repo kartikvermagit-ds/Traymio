@@ -1,0 +1,33 @@
+name: Bug report
+description: Something is not working in Traymio
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use sample files and redact private filenames or paths in screenshots."
+  - type: input
+    id: version
+    attributes:
+      label: Traymio version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and display scaling
+      placeholder: "Windows 11, 125% scaling"
+    validations:
+      required: true
+  - type: input
+    id: destination
+    attributes:
+      label: Source and destination
+      placeholder: "File Explorer to Traymio to File Explorer; local files; neither app elevated"
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps, expected behavior, and any error text. Note whether files or folders were selected, and if paths are local or on a network.
+    validations:
+      required: true
